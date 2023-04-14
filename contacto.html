@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom | Contactenos</title>
+    <link rel="icon" type="image/jpg" href="images/phantom.jpg">
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <header>
+        <h1 style="font-size: 2em; color: rgb(0, 0, 0);"> PHANTOM </h1> <!-- TITULO 1 -->
+        <h2> Videojuegos y Cultura Pop </h2> <!-- TITULO 2 -->
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+         <p><a href="index.html"> Volver atras</a></p> <!-- Anchor (a) -->
+               
+    </nav>
+
+    <!-- Cuerpo Principal -->
+    <main>
+        
+        <!-- Formulario de contacto -->
+        <section id="formcontacto">   
+           
+            <h3>Escríbenos Gamer 🎮</h3>
+            
+            <!-- Formulario -->
+            <form action="contactoregistro.html" method="post">
+                <div>
+                    <label for="txtName">Ingresa tu nombre</label>   
+                    <input type="text" name="txtName" id="txtName" maxlength="50" required>
+                </div>
+                   <br> 
+                <div> 
+                    <label for="txtApellido">Ingresa tu apellido</label>   
+                    <input type="text" name="txtApellido" id="txtApellido" maxlength="50" required>
+                </div>    
+                   <br> 
+                <div>
+                    <label for="txtEmail">Ingresa tu correo electrónico</label>   
+                    <input type="email" name="txtEmail" id="txtEmail" autocomplete="off" maxlength="100" required>
+                </div>    
+                <br>
+                <div>
+                    <label for="numberphone">Ingresa tu némero de celular</label>
+                    <input type="tel" name="numberphone" maxlength="9" id="numberphone" minlength="7">
+                </div>
+                
+                <br>
+
+                <!-- Select / Selección de valor -->
+                <div>
+                    <label for="numberphone">Selecciona tu asunto</label>
+                    <select name="txtAsunto" id="txtAsunto" required>
+                        <option value="">Selecciona una opción...</option>
+                        <option value="ComprarporMayor">Comprar productos por mayor</option>
+                        <option value="ConsultarDevolución">Consulta para devolución de producto</option>
+                        <option value="Consultas/QuejasdeProductos">Hacer consultas generales</option>
+                    </select>
+                </div>
+                
+                <br>
+
+                <!-- TextArea / Cuerpo de texto -->
+                <div>
+                    <textarea name="BodyDetalle" id="BodyDetalle" cols="30" rows="8"></textarea>
+                </div>
+
+                <!-- Input Checkbox -->
+                <input type="checkbox" name="bolAutorizo" id="bolAutorizo" required>
+                <label for="bolAutorizo">Autorizo el envio de publicidad e información comercial</label>
+                 
+                <br>
+
+                <!-- Input Submit / Botón de enviar -->
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            
+            </form>
+
+        </section>
+        
+        <!-- DATOS DE CONTACTO  -->
+        <section id="ubicanos">
+            <p>Av.Los Pinos San Miguel
+                <br> Magdalena del Mar - Lima - Perú
+            </p>
+            <p>Teléfonos: 01 865 8888 / 999 234 554 </p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15604.99124937245!2d-77.06691554999999!3d-12.095180150000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c854357904f7%3A0x93dd5b0ea540b6e0!2sReal%20Plaza%20Salaverry!5e0!3m2!1ses-419!2spe!4v1680340477033!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Ubicación en el mapa -->            
+        
+        </section>
+        
+    </main>
+
+    
+</body>
+</html>

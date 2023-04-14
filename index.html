@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Cargar la libreria Boostrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!--  -->
+
+  <title>Phantom | Catálogo de Funkos </title>
+  <link rel="icon" type="image/jpg" href="images/phantom.jpg"> <!-- logo PHANTOM favicon -->
+
+</head>
+
+<body>
+
+  <!-- CABECERA -->
+  <header>
+    <!-- Le agregué style para aplicarle algunos cambios inline -->
+    <h1 style=" font-weight: bold; background-position: center; background-size: cover; padding-top: 20px; 
+                padding-bottom: 20px; background-image: url(images/header.png); 
+                margin: 0px; font-size: 7em; color: rgb(255, 255, 255);
+                text-align: center; font-family:'Bebas Neue' "> PHANTOM </h1> <!-- TITULO 1 -->
+    <h2 style=" letter-spacing: 0.18em; margin: 0px; padding-top: 10px; padding-bottom: 10px; 
+                font-size: 1.3em; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); 
+                text-align: center; font-family:'Bebas Neue"> Consolas, Videojuegos y Cultura POP </h2>
+    <!-- TITULO 2 -->
+  </header>
+
+
+  <!--Navegation-->
+
+  <!--Barra de navegación  -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(218, 43, 43);">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">Quienes Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contacto.html">Contáctenos</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <button type="button" class="btn btn-light" data-bs-toggle="modal"
+            data-bs-target="#ventanacarrito">Carrito</button> <!-- BOTON PARA VER NUESTRAS COMPRAS -->
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- VENTANA DE CARRITO -->
+  <div id="ventanacarrito" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Carrito</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Su carrito está vacio ahora.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">Limpiar</button>
+          <button type="button" class="btn btn-primary">Finalizar Compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- CARRUSEL CON NOVEDADES -->
+
+  <div id="carouselExampleIndicators" class="carousel slide text-center">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/CARRUSEL 1.jpg" class=" w-70" alt="..."> <!-- RESIDENT EVIL 4 -->
+      </div>
+      <div class="carousel-item">
+        <img src="images/CARRUSEL 2.jpg" class=" w-70" alt="..."> <!-- FUNKO MUJERES -->
+      </div>
+      <div class="carousel-item">
+        <img src="images/CARRUSEL 3.jpg" class=" w-70" alt="..."> <!-- FUNKO LEGEND OF ZELDA -->
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <hr> <!--horizontal rect-->
+
+  <!-- Notificación -->
+  <p
+    style=" background-color: rgb(218, 43, 43);margin: 0; padding: 15px 20px;color: aliceblue;text-align: center;font-family: 'Bebas Neue', cursive;font-size: 2em;">
+    CATÁLOGO DE FUNKOS POP</p>
+
+  <br><br>
+
+  <!--Parte Principal-->
+  <main class="container">
+
+    <!--Sección de Catálogo-->
+    <section id="catalogo" class="row text-center">
+
+      <!-- Artículo Funko 01 -->
+      <article class="col" style="border: 0.9px #bbbaba solid; box-sizing: border-box; border-radius: 10px;">
+
+        <picture>
+          <img src="images/PRODUCTO 1.jpg" alt="FUNKO POP ONE PIECE"> <!-- src:recurso o fuente -->
+        </picture>
+        <h3
+          style=" font-size: 1.17em; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">
+          Funko Pop Ride One Piece - Preventa</h3>
+        <p style="font-family: 'Bebas Neue', cursive;
+        font-size: 1.5em;
+        max-width: 100%;
+        margin-left: 80px;
+        margin-right: 80px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: rgb(201, 29, 29);
+        padding: 7px 50px;">S/129.00</p>
+        <button class="btn btn-secondary"
+          style="color: aliceblue; border-color: black; background-color: rgb(0, 0, 0);">Agregar al Carrito</button>
+
+      </article>
+
+      <!-- Artículo Funko 02 -->
+      <article class="col" style="border: 0.9px #adadad solid; box-sizing: border-box; border-radius: 10px;">
+
+        <picture>
+          <img src="images/PRODUCTO 2.jpg" alt="FUNKO POP TOY STORY"> <!-- src:recurso o fuente -->
+        </picture>
+        <h3
+          style=" font-size: 1.17em; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">
+          Funko Pop Classics Disney: Toy Story-Lotso Preventa</h3>
+        <p style="font-family: 'Bebas Neue', cursive;
+        font-size: 1.5em;
+        max-width: 100%;
+        margin-left: 80px;
+        margin-right: 80px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: rgb(201, 29, 29);
+        padding: 7px 50px;">S/115.00</p>
+        <button class="btn btn-secondary"
+          style="color: aliceblue; border-color: black; background-color: rgb(0, 0, 0);">Agregar al Carrito</button>
+
+      </article>
+
+      <!-- Artículo Funko 03 -->
+      <article class="col" style="border: 0.9px #adadad solid; box-sizing: border-box; border-radius: 10px;">
+
+        <picture>
+          <img src="images/PRODUCTO 3.jpg" alt="FUNKO POP WALT DISNEY"> <!-- src:recurso o fuente -->
+        </picture>
+        <h3
+          style=" font-size: 1.17em; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">
+          Funko Pop Disney 100 - Walt Disney with Drawing</h3>
+        <p style="font-family: 'Bebas Neue', cursive;
+        font-size: 1.5em;
+        max-width: 100%;
+        margin-left: 80px;
+        margin-right: 80px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: rgb(201, 29, 29);
+        padding: 7px 50px;">S/80.00</p>
+        <button class="btn btn-secondary"
+          style="  color: rgb(255, 255, 255);border-color: black; background-color: rgb(0, 0, 0);">Agregar al
+          Carrito</button>
+
+      </article>
+
+      <!-- Artículo Funko 04 -->
+      <article class="col" style="border: 0.9px #adadad solid; box-sizing: border-box; border-radius: 10px;">
+
+        <picture>
+          <img src="images/PRODUCTO 4.jpg" alt="FUNKO POP SPIDERMAN"> <!-- src:recurso o fuente -->
+        </picture>
+        <h3
+          style=" font-size: 1.17em; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">
+          Funko Pop Marvel: Spider-Man No Way Home - Friendly</h3>
+        <p style="font-family: 'Bebas Neue', cursive;
+        font-size: 1.5em;
+        max-width: 100%;
+        margin-left: 80px;
+        margin-right: 80px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: rgb(201, 29, 29);
+        padding: 7px 50px;">S/89.90</p>
+        <button class="btn btn-secondary"
+          style="color: aliceblue; border-color: black; background-color: rgb(0, 0, 0);">Agregar al Carrito</button>
+
+      </article>
+
+      <!-- Artículo Funko 05 -->
+      <article class="col" style="border: 0.9px #adadad solid; box-sizing: border-box; border-radius: 10px;">
+
+        <picture>
+          <img src="images/PRODUCTO 5.jpg" alt="FUNKO POP DRAGONBALL"> <!-- src:recurso o fuente -->
+        </picture>
+        <h3
+          style=" font-size: 1.17em; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">
+          Funko Pop Dragon Ball Z - Cel(2nd Form) </h3>
+        <p style="font-family: 'Bebas Neue', cursive;
+        font-size: 1.5em;
+        max-width: 100%;
+        margin-left: 80px;
+        margin-right: 80px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: rgb(201, 29, 29);
+        padding: 7px 50px;">S/79.90</p>
+        <button class="btn btn-secondary"
+          style=" color: aliceblue; border-color: black; background-color: rgb(0, 0, 0);">Agregar al Carrito</button>
+
+      </article>
+
+      <!-- Artículo Funko 06 -->
+      <article class="col" style="border: 0.9px #adadad solid; box-sizing: border-box; border-radius: 10px;">
+
+        <picture>
+          <img src="images/PRODUCTO 6.jpg" alt="FUNKO POP NARUTO"> <!-- src:recurso o fuente -->
+        </picture>
+        <h3
+          style=" font-size: 1.17em; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">
+          Funko Pop Naruto Shippuden - Might Guy</h3>
+        <p style="font-family: 'Bebas Neue', cursive;
+        font-size: 1.5em;
+        max-width: 100%;
+        margin-left: 80px;
+        margin-right: 80px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: rgb(201, 29, 29);
+        padding: 7px 50px;">S/69.90</p>
+        <button class="btn btn-secondary"
+          style="color: aliceblue; border-color: black; background-color: rgb(0, 0, 0);">Agregar al Carrito</button>
+
+      </article>
+
+      <!-- Artículo Funko 07 -->
+      <article class="col" style="border: 0.9px #adadad solid; box-sizing: border-box; border-radius: 10px;">
+
+        <picture>
+          <img src="images/PRODUCTO 7.jpg" alt="FUNKO POP HORROR"> <!-- src:recurso o fuente -->
+        </picture>
+        <h3
+          style=" font-size: 1.17em; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">
+          Funko Pop Movies: Halloween - Michael Myers (Blacklight)</h3>
+        <p style="font-family: 'Bebas Neue', cursive;
+        font-size: 1.5em;
+        max-width: 100%;
+        margin-left: 80px;
+        margin-right: 80px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: rgb(201, 29, 29);
+        padding: 7px 50px;">S/89.90</p>
+        <button class="btn btn-secondary"
+          style=" color: aliceblue; border-color: black; background-color: rgb(0, 0, 0);">Agregar al Carrito</button>
+
+      </article>
+
+      <!-- Artículo Funko 08 -->
+      <article class="col" style="border: 0.9px #adadad solid; box-sizing: border-box; border-radius: 10px;">
+
+        <picture>
+          <img src="images/PRODUCTO 8.jpg" alt="FUNKO POP DISNEY"> <!-- src:recurso o fuente -->
+        </picture>
+        <h3
+          style=" font-size: 1.17em; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">
+          Funko Pop Deluxe Disney: Ratatouille - Remy </h3>
+        <p style="font-family: 'Bebas Neue', cursive;
+        font-size: 1.5em;
+        max-width: 100%;
+        margin-left: 80px;
+        margin-right: 80px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: rgb(201, 29, 29);
+        padding: 7px 50px;">S/159.90</p>
+        <button class="btn btn-secondary"
+          style=" color: aliceblue; border-color: black; background-color: rgb(0, 0, 0);">Agregar al Carrito</button>
+
+      </article>
+
+      <!-- Artículo Funko 09 -->
+      <article class="col" style="border: 0.9px #adadad solid; box-sizing: border-box; border-radius: 10px;">
+
+        <picture>
+          <img src="images/PRODUCTO 9.jpg" alt="FUNKO POP DC"> <!-- src:recurso o fuente -->
+        </picture>
+        <h3
+          style=" font-size: 1.17em; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">
+          Funko Pop Heroes: Batman (Light and sound)</h3>
+        <p style="font-family: 'Bebas Neue', cursive;
+        font-size: 1.5em;
+        max-width: 100%;
+        margin-left: 80px;
+        margin-right: 80px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: rgb(201, 29, 29);
+        padding: 7px 50px;">S/109.90</p>
+        <button class="btn btn-secondary"
+          style=" color: aliceblue; border-color: black; background-color: rgb(0, 0, 0);">Agregar al Carrito</button>
+
+      </article>
+
+      <!-- Artículo Funko 10 -->
+      <article class="col" style="border: 0.9px #adadad solid; box-sizing: border-box; border-radius: 10px;">
+
+        <picture>
+          <img src="images/PRODUCTO 10.jpg" alt="FUNKO POP STRANGER THINGS">
+          <!-- src:recurso o fuente -->
+        </picture>
+        <h3
+          style=" font-size: 1.17em; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">
+          Funko Pop Tv- Stranger Things - Vecna</h3>
+        <p style="font-family: 'Bebas Neue', cursive;
+        font-size: 1.5em;
+        max-width: 100%;
+        margin-left: 80px;
+        margin-right: 80px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: rgb(201, 29, 29);
+        padding: 7px 50px;">S/69.90</p>
+        <button class="btn btn-secondary"
+          style=" color: aliceblue; border-color: black; background-color: rgb(0, 0, 0);">Agregar al Carrito</button>
+
+      </article>
+
+      <!-- Artículo Funko 11 -->
+      <article class="col" style="border: 0.9px #adadad solid; box-sizing: border-box;border-radius: 10px;">
+
+        <picture>
+          <img src="images/PRODUCTO 11.jpg" alt="FUNKO POP MARVEL"> <!-- src:recurso o fuente -->
+        </picture>
+        <h3
+          style=" font-size: 1.17em; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">
+          Funko Pop Marvel: Spider-Man: No Way Home - Doc Ock</h3>
+        <p style="font-family: 'Bebas Neue', cursive;
+        font-size: 1.5em;
+        max-width: 100%;
+        margin-left: 80px;
+        margin-right: 80px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: rgb(201, 29, 29);
+        padding: 7px 50px;">S/69.90</p>
+        <button class="btn btn-secondary"
+          style="color: aliceblue;border-color: black; background-color: rgb(0, 0, 0);">Agregar al Carrito</button>
+
+      </article>
+
+      <!-- Artículo Funko 12 -->
+      <article class="col" style="border: 0.9px #adadad solid; box-sizing: border-box; border-radius: 10px;">
+
+        <picture>
+          <img src="images/PRODUCTO 12.jpg" alt="FUNKO POP MARVEL"> <!-- src:recurso o fuente -->
+        </picture>
+        <h3
+          style=" font-size: 1.17em; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">
+          Funko Pop Marvel: Spider-Man: No Way Home - Doctor Strange</h3>
+        <p style="font-family: 'Bebas Neue', cursive;
+        font-size: 1.5em;
+        max-width: 100%;
+        margin-left: 80px;
+        margin-right: 80px;
+        border-radius: 10px;
+        color: #fff;
+        background-color: rgb(201, 29, 29);
+        padding: 7px 50px;">S/69.90</p>
+        <button class="btn btn-secondary"
+          style=" color: aliceblue; border-color: black; background-color: rgb(0, 0, 0);">Agregar al Carrito</button>
+
+      </article>
+
+
+    </section>
+  </main>
+
+  <br><br>
+
+  <footer>
+    <h6
+      style="margin: 0px; color: blanchedalmond; text-align: center; padding-bottom: 50px; padding-top: 50px;background-color: rgb(218, 43, 43);">
+      🕹️ "Catálogo creado por Miguel Angel Cabanillas en su búsqueda por ser un buen desarrollador"🕹️</h6>
+  </footer>
+
+  <!-- Aquí se esta ejecuntado las instrucciones JS -->
+  <!-- Cargando funciones de Boostrap -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- JavaScript personalizado -->
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>
